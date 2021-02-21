@@ -729,7 +729,7 @@ function getPayload(refresh) {
 		
 		// refresh interval
 		retry = 0;
-		const maxRefresh = 2;
+		const maxRefresh = 0.1;
 		
 		if (refresh > 0 && refresh < maxRefresh) {
 			adapter.log.warn('Due to performance reasons, the refresh rate can not be set to less than ' + maxRefresh + ' seconds. Using ' + maxRefresh + ' seconds now.');
